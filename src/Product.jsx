@@ -13,7 +13,7 @@ const Product = () => {
 
         <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
             <div className={`${styles.boxWidth}`}>
-            <h1>Products Page</h1>
+            <h1>Product Page</h1>
             </div>
         </div>
     </div>
