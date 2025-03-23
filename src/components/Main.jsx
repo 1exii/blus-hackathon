@@ -14,7 +14,7 @@ const Main = () => {
         <p className={`${styles.paragraph} max-w-[500px] mt-5`}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
         </p>
-        <Button styles={`mt-10`} />
+        <Button styles={`mt-10`} link="/product" />
       </div>
 
       <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>
