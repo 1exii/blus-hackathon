@@ -1,3 +1,7 @@
+[[build]]
+  command = "npm run build"
+  publish = "dist"
+
 [[redirects]]
   from = "/product"
   to = "/index.html"  
@@ -12,4 +16,3 @@
   from = "/*"
   to = "/index.html"  
   status = 200
-
