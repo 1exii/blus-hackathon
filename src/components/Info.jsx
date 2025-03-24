@@ -12,12 +12,18 @@ const Info = () => (
 
     <div className={layout.sectionInfo}>
       <h2 className={styles.heading2}>
-        Lorem ipsum dolor <br className="sm:block hidden" /> sit amet mauris eu 
+        Our Inspiration <br className="sm:block hidden" /> 
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        Elit enim sed massa etiam. Mauris eu adipiscing ultrices ametodio
-        aenean neque. Fusce ipsum orci rhoncus aliporttitor integer platea
-        placerat.
+      We know how easy it is to fall victim to financial scams. 
+      We see it every day, on the news. While we were 
+      lucky to get extensive education on how to 
+      recognize and take action on phishing and fraud, 
+      some people have not received that training. 
+      The loss of such large amounts of money can 
+      impact people's lives substantially, and we 
+      just wanted to make the world a more just place 
+      in the ways we could.
       </p>
     </div>
   </section>

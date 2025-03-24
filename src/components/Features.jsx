@@ -1,11 +1,20 @@
 import { features } from "../constants";
 import styles, { layout } from "../style";
-import Button from "./Button";
 
 const FeatureCard = ({ icon, title, content, index }) => (
-  <div className={`flex flex-row p-6 rounded-[20px] ${index !== features.length - 1 ? "mb-6" : "mb-0"} feature-card`}>
-    <div className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-dimBlue`}>
-      <img src={icon} alt="feature icon" className="w-[50%] h-[50%] object-contain" />
+  <div
+    className={`flex flex-row p-6 rounded-[20px] ${
+      index !== features.length - 1 ? "mb-6" : "mb-0"
+    } feature-card`}
+  >
+    <div
+      className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-dimBlue`}
+    >
+      <img
+        src={icon}
+        alt="feature icon"
+        className="w-[50%] h-[50%] object-contain"
+      />
     </div>
     <div className="flex-1 flex flex-col ml-3">
       <h4 className="font-poppins font-semibold text-white text-[18px] leading-[23.4px] mb-1">
@@ -21,13 +30,9 @@ const FeatureCard = ({ icon, title, content, index }) => (
 const Features = () => (
   <section id="features" className={`${layout.section} max-w-[1100px] mx-auto`}>
     <div className={layout.sectionInfo}>
-      <h2 className={styles.heading2}>
-        Features
-      </h2>
+      <h2 className={styles.heading2}>Features</h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-        et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-        et dolore magna aliqua.
+        Detect fraud and phishing scams with just a click of a button!
       </p>
     </div>
 

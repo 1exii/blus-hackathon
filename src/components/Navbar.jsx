@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar">
       <p className="font-poppins text-3xl font-bold text-white hover:text-gray-300 transition duration-300">
-        Lorem Ipsum
+        Pocket Finance
       </p>
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav) => (

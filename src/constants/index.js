@@ -16,28 +16,33 @@ export const navLinks = [
     link: "/product",
     title: "Product",
   },
+  {
+    id: "quiz",
+    link: "/quiz",
+    title: "Quiz",
+  },
 ];
 
 export const features = [
   {
     id: "feature-1",
     icon: star,
-    title: "Lorem",
+    title: "Versatile Usage",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+      "Cerberus functions as both a website and a chrome extension.",
   },
   {
     id: "feature-2",
     icon: shield,
-    title: "Ipsum",
+    title: "Protect yourself from malicious emails",
     content:
-      "Donec et magna eu nibh interdum fermentum ut dolor. ",
+      "Our built-in phishing scanner will process the information and provide a detailed analysis of whether or not it is a scam.",
   },
   {
     id: "feature-3",
     icon: send,
-    title: "Dolor",
+    title: "Get access to the Blacklist",
     content:
-      "Ut dolor turpis, interdum et ipsum ut, convallis luctus mi. ",
+      "View our exclusive database of malicious emails. Once our system registers a malicious email, it will save the sender's address and alert other users who provide the same address.",
   },
 ];
