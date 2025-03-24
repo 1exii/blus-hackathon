@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Email Phishing Checker",
+  "version": "1.0",
+  "description": "Check emails for potential phishing attempts",
+  "permissions": ["activeTab"],
+  "host_permissions": ["https://generativelanguage.googleapis.com/*"],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

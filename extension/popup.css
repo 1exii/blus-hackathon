@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: black;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  width: 500px;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+form {
+  width: 100%;
+}
+
+.output {
+  margin-top: 20px;
+  width: 100%;
+  padding: 15px;
+  background: white;
+  border-radius: 10px;
+}
+
+.subject-input-box,
+.sender-input-box {
+  position: relative;
+  margin: 10px 0;
+  height: 50px;
+  width: 100%;
+  border-radius: 10px;
+  background: white;
+  border: none;
+  padding: 10px 15px;
+}
+
+.content-input-box {
+  position: relative;
+  margin: 10px 0;
+  min-height: 150px;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  background: white;
+  padding: 15px;
+  resize: vertical;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 10px;
+  background: #304674;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  margin-bottom: 30px;
+}
+
+/* Loading state */
+.loading {
+  color: #666;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Model response */
+.model {
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Error message */
+.error {
+  color: #ff4444;
+  padding: 10px;
+  background: #ffebee;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/* Focus states */
+.subject-input-box:focus,
+.sender-input-box:focus,
+.content-input-box:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2);
+}
+
+.submit-button:hover {
+  color: white;
+  background: #4b659f;
+  /*transform: translateY(-2px);*/
+  transform: scale(0.96);
+}
+
+.submit-button:hover:before,
+.submit-button:hover:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 150%;
+  width: 150%;
+  z-index: -1;
+  background-repeat: no-repeat;
+}
+
+.submit-button:hover:before {
+  top: -70%;
+  background-image: radial-gradient(circle, #98bad5 20%, transparent 20%),
+    radial-gradient(circle, transparent 20%, #98bad5 20%, transparent 30%),
+    radial-gradient(circle, #98bad5 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #98bad5 15%, transparent 20%),
+    radial-gradient(circle, #98bad5 20%, transparent 20%),
+    radial-gradient(circle, #98bad5 20%, transparent 20%),
+    radial-gradient(circle, #98bad5 20%, transparent 20%),
+    radial-gradient(circle, #98bad5 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+    18% 18%;
+  background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+    40% 90%, 55% 90%, 70% 90%;
+  animation: topBubbles 0.7s ease-in-out forwards;
+}
+
+@keyframes topBubbles {
+  50% {
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+      50% 50%, 65% 20%, 90% 30%;
+  }
+  100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 50%,
+      22% 40%, 50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+.submit-button:hover:after {
+  bottom: -70%;
+  background-image: radial-gradient(circle, #98bad5 20%, transparent 20%),
+    radial-gradient(circle, transparent 20%, #98bad5 20%, transparent 30%),
+    radial-gradient(circle, #98bad5 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #98bad5 15%, transparent 20%),
+    radial-gradient(circle, #98bad5 20%, transparent 20%),
+    radial-gradient(circle, #98bad5 20%, transparent 20%),
+    radial-gradient(circle, #98bad5 20%, transparent 20%),
+    radial-gradient(circle, #98bad5 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+    18% 18%;
+  background-position: 10% 0%, 30% 10%, 55% 0%, 70% 0%, 85% 0%, 70% 0%;
+  animation: bottomBubbles 0.7s ease-in-out forwards;
+}
+
+@keyframes bottomBubbles {
+  50% {
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+      105% 0%;
+  }
+  100% {
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+      110% 10%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
